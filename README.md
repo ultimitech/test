@@ -8,7 +8,9 @@ This guide provides step-by-step instructions to install and set up the **Design
 
 Follow these steps in sequence:
 
-### 1. Install Python Tools
-Install `python3-pip` and `python3-virtualenv`:
-```bash
-sudo apt install -y python3-pip python3-virtualenv
+1. Install Python tools:
+   ```bash
+   sudo apt install -y python3-pip python3-virtualenv
+2. Install Python tools:
+   ```bash
+   sudo apt install -y python3-pip python3-virtualenv
