@@ -14,4 +14,4 @@ Follow these steps in sequence:
 
 2. Clone and change directory into Designer-Artifact-User directory:
    ```bash
-   git clone https://github.com/LearnableLoopAI/Designer-Artifact-User
+   git clone https://github.com/LearnableLoopAI/Designer-Artifact-User && cd Designer-Artifact-User
