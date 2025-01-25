@@ -3,8 +3,20 @@
 This guide provides step-by-step instructions to install and set up the **Designer-Artifact-User** application on an Ubuntu 24.04 Linux server.
 
 ---
+## Purpose of dau-active-inference package
 
-## Installation Steps
+The purpose of the dau-active-inference package is to allow a user to run an active inference based simulation for three interacting agents.
+
+## dau-active-inference package dependencies
+
+- dau-active-inference depends on:
+   - numpy
+   - matplotlib
+   - pymdp
+   - inferactively-pymdp
+      - pytorch
+
+## Installation Instructions
 
 Follow these steps in sequence:
 
@@ -27,3 +39,23 @@ Follow these steps in sequence:
 5. Run dau-active-inference package with --help flag to see switch options:
    ```bash
    dau-active-inference --help or dau-active-inference --duration 20
+
+## How to run simulations with the package from PyPI
+
+To reach PyPI repository, go to: https://pypi.org/project/dau-active-inference/
+
+dau-active-inference --help
+dau-active-inference --duration 20
+
+### duration argument
+
+The duration argument specifies the number of time steps or iterations to perform. The default value of the duration argument is 20. For example, if you need a simulation run over 50 steps, provide:
+dau-active-inference --duration 50
+
+Currently, provision is only made for this single argument. In the future, the system might be expanded so that more arguments could be supplied.
+
+If you are more technically-minded and understand the basic operation of the pymdp package, you are welcome to modify the dau-activate-inference.py file and experiment locally.
+
+## How to run simulations with the notebook file Designer-Artifact-User.ipynb
+
+If you are more technically-minded and understand the basic operation of the pymdp package, you are welcome to modify the Designer-Artifact-User.ipynb notebook file.
