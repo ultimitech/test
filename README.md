@@ -1,17 +1,14 @@
-# Python Environment Setup on Ubuntu 24.04
+# Designer-Artifact-User: Installation Instructions
 
-This guide provides step-by-step instructions to set up Python tools (`python3-pip` and `python3-virtualenv`) on an Ubuntu 24.04 Linux server.
-
-## Prerequisites
-
-- An Ubuntu 24.04 server
-- `sudo` privileges to install packages
+This guide provides step-by-step instructions to install and set up the **Designer-Artifact-User** application on an Ubuntu 24.04 Linux server.
 
 ---
 
-## Step 1: Update System Packages
+## Installation Steps
 
-Before starting, update the system to ensure you have the latest package information:
+Follow these steps in sequence:
 
+### 1. Install Python Tools
+Install `python3-pip` and `python3-virtualenv`:
 ```bash
-sudo apt update && sudo apt upgrade -y
+sudo apt install -y python3-pip python3-virtualenv
