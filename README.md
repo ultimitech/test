@@ -12,6 +12,10 @@ Follow these steps in sequence:
    ```bash
    sudo apt install -y python3-pip python3-virtualenv
 
+
+
+
+   
 2. Clone and change directory into Designer-Artifact-User directory:
    ```bash
    git clone https://github.com/LearnableLoopAI/Designer-Artifact-User
