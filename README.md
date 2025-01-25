@@ -8,9 +8,10 @@ This guide provides step-by-step instructions to install and set up the **Design
 
 Follow these steps in sequence:
 
-1. Install Python tools:
+1. Install python tools:
    ```bash
    sudo apt install -y python3-pip python3-virtualenv
-2. Install Python tools:
+
+2. Clone and change directory into Designer-Artifact-User directory:
    ```bash
-   sudo apt install -y python3-pip python3-virtualenv
+   git clone https://github.com/LearnableLoopAI/Designer-Artifact-User
