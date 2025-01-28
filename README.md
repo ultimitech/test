@@ -43,13 +43,11 @@ Follow these steps in sequence:
 6. Uninstall dau-active-inference package and clean .venv environment like so:
    ```bash
    pip uninstall dau-active-inference && pip freeze | xargs pip uninstall -y
-   ```
 
 ## How to run simulations with the package from PyPI
 
-To reach PyPI repository, go to: https://pypi.org/project/dau-active-inference/
+7. To reach PyPI repository, go to: https://pypi.org/project/dau-active-inference/
    ```bash
-   dau-active-inference --help
    dau-active-inference --duration 20
 
 ### duration argument
