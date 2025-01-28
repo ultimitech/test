@@ -20,9 +20,9 @@ The purpose of the dau-active-inference package is to allow a user to run an act
 
 Follow these steps in sequence:
 
-1. Install python tools:
+1. Install python tools and dependencies:
    ```bash
-   sudo apt install -y python3-pip python3-virtualenv
+   sudo apt update && sudo apt install -y python3-pip python3-virtualenv git
 
 2. Clone and change directory to Designer-Artifact-User directory:
    ```bash
@@ -32,19 +32,24 @@ Follow these steps in sequence:
    ```bash
    virtualenv .venv && source .venv/bin/activate
 
-4. Install dau-active-inference package and dependencies from requirements.txt:
+4. Install dau-active-inference package and dependencies:
    ```bash
-   pip install --no-cache-dir -r requirements.txt
+   pip install --no-cache-dir dau-active-inference
 
 5. Run dau-active-inference package with --help flag to see switch options:
    ```bash
-   dau-active-inference --help or dau-active-inference --duration 20
+   dau-active-inference --duration 20
+
+6. Uninstall dau-active-inference package and clean .venv environment like so:
+   ```bash
+   pip uninstall dau-active-inference && pip freeze | xargs pip uninstall -y
 
 ## How to run simulations with the package from PyPI
 
 To reach PyPI repository, go to: https://pypi.org/project/dau-active-inference/
+   ```bash
+   dau-active-inference --help
 
-dau-active-inference --help
 dau-active-inference --duration 20
 
 ### duration argument
@@ -54,7 +59,7 @@ dau-active-inference --duration 50
 
 Currently, provision is only made for this single argument. In the future, the system might be expanded so that more arguments could be supplied.
 
-If you are more technically-minded and understand the basic operation of the pymdp package, you are welcome to modify the dau-activate-inference.py file and experiment locally.
+If you are more technically-minded and understand the basic operation of the pymdp package, you are welcome to modify the dau_activate_inference.py file and experiment locally.
 
 ## How to run simulations with the notebook file Designer-Artifact-User.ipynb
 
