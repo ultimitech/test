@@ -46,7 +46,7 @@ Follow these steps in sequence:
 
 ## How to run simulations with the package from PyPI
 
-7. To reach PyPI repository, go to: https://pypi.org/project/dau-active-inference/
+To reach PyPI repository, go to: https://pypi.org/project/dau-active-inference/
    ```bash
    dau-active-inference --help
    dau-active-inference --duration 20
